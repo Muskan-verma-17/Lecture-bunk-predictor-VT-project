@@ -1,18 +1,23 @@
 {
-  "name": "lecture-bunk-predictor-mern",
+  "name": "lecture-bunk-predictor-api",
   "version": "1.0.0",
   "private": true,
-  "description": "College MERN stack Lecture Bunk Predictor application.",
+  "type": "module",
+  "main": "src/server.js",
   "scripts": {
-    "install:all": "npm install --prefix server && npm install --prefix client",
-    "dev": "npm run dev --prefix server",
-    "server": "npm run dev --prefix server",
-    "client": "npm run dev --prefix client",
-    "build": "npm run build --prefix client",
-    "start": "npm start --prefix server"
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
   },
-  "keywords": ["mern", "react", "express", "mongodb", "attendance"],
-  "license": "MIT"
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "jsonwebtoken": "^9.0.2",
+    "lecture-bunk-predictor-mern": "file:..",
+    "mongoose": "^8.9.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
 }
-
-
